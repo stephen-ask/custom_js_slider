@@ -1,0 +1,273 @@
+<html>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+
+  <style>
+    html, body {
+	position: relative;
+	height: 100%;
+}
+body {
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color:#000;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	margin: auto;
+}
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #eee;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.swiper-pagination {
+	position: absolute;
+  bottom: 4rem !important;
+	width: auto !important;
+}
+.swiper-pagination-bullet {
+	padding: 5px 10px;
+	border-radius: 0;
+	width: auto;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color:#000;
+	opacity: 1;
+	background: rgba(0,0,0,0.2);
+}
+.swiper-pagination-bullet-active {
+	color:#fff;
+	background: #007aff;
+}
+
+.item{
+	position:absolute;
+	bottom:0;
+}
+/* .divider::after {
+	content: url('divider.svg');
+	position: absolute;
+	bottom: 0;
+} */
+.swiper-slide{
+	position: relative;
+}
+
+/* border  */
+
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+	width: 100%;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.div-arrow-down:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -7px;
+	left: calc(50% - 7px);
+	width: 14px;
+	height: 14px;
+	transform: rotate(45deg);
+	background-color: #eee;
+	border-bottom: 1px solid rgb(48,49,51);
+	border-right: 1px solid rgb(48,49,51);
+}
+
+.div-tab-down:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: calc(50% - 10px);
+	width: 20px;
+	height: 14px;
+	background-color: #eee;
+	border-bottom: 1px solid rgb(48,49,51);
+	border-left: 1px solid rgb(48,49,51);
+	border-right: 1px solid rgb(48,49,51);
+	border-radius: 0 0 8px 8px;
+}
+
+.div-stopper:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -6px;
+	left: calc(50% - 7px);
+	width: 14px;
+	height: 12px;
+	background-color: #eee;
+	border-left: 1px solid rgb(48,49,51);
+	border-right: 1px solid rgb(48,49,51);
+}
+
+.div-dot:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -9px;
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background-color: goldenrod;
+	border: 1px solid rgb(48,49,51);
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 2px white,
+					0 0 0 4px white;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+left: 0; 
+  right: 0; 
+ bottom:20% !important; 
+  margin-left: auto; 
+  margin-right: auto; 
+
+}
+.divider .div-transparent .div-arrow-down,.content{
+	width:100%;
+}
+
+@media screen and (max-width: 600px) {
+	#slider{
+		display: flex;
+	}
+	.custom_slide
+	{		
+		padding:15px;
+	}
+	.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: 21% !important;
+	left: 7% !important;
+}
+}
+@media screen and (min-width: 600px) {
+.custom_slide
+	{		
+		padding:30px;
+	}
+}
+
+   </style> 
+      
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+<!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+      <!-- Slides -->
+    <div class="swiper-slide">
+		<div class ="content">
+			<h4>Slide 1</h4>
+			<div class="divider div-transparent div-arrow-down"></div>
+		</div>
+		<div class="item" id="slide1">
+			<h4>Jonathan james</h4>
+			<h6>Developer</h6>
+		</div>	
+	</div>
+    <div class="swiper-slide">
+		<div class ="content">
+			<h4>Slide 2</h4>
+			<div class="divider div-transparent div-arrow-down"></div>
+		</div>
+		<div class="item" id="slide1">
+			<h4>Jonathan james</h4>
+			<h6>Developer</h6>
+		</div>	
+	</div>
+	
+    <div class="swiper-slide">
+		<div class ="content">
+			<h4>Slide 3</h4>
+			<div class="divider div-transparent div-arrow-down"></div>
+		</div>
+		<div class="item" id="slide1">
+			<h4>Jonathan james</h4>
+			<h6>Developer</h6>
+		</div>	
+
+	</div>
+	
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination" id="slider" ></div>
+  <div class="details" style="z-index:9999999">
+    <div class="item" id="slide1">
+      <h4>Jonathan james</h4>
+      <h6>Developer</h6>
+    </div>
+    <div class="item" id="slide2">
+      <h4>Jonathan james</h4>
+      <h6>Developer</h6>
+    </div>
+    <div class="item" id="slide3">
+      <h4>Jonathan james</h4>
+      <h6>Developer</h6>
+    </div>
+  </div>
+  <!-- If we need navigation buttons -->
+
+</div>
+<script>
+  var menu = ['1', '2', '3'];
+  var img = ['img-1.svg','img-2.svg','img-3.svg'];
+var mySwiper = new Swiper ('.swiper-container', {
+    // If we need pagination
+    dynamicBullets: true,
+	pagination: {
+      el: '.swiper-pagination',
+			clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + ' custom_slide" style="background-image:url('+img[index]+');background-size:cover;background-repeat:no-repeat;"></span>';
+        },
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+  </script>
+</html>
