@@ -255,9 +255,10 @@ left: 0;
   var img = ['img-1.svg','img-2.svg','img-3.svg'];
 var mySwiper = new Swiper ('.swiper-container', {
     // If we need pagination
-    dynamicBullets: true,
+    
 	pagination: {
       el: '.swiper-pagination',
+		dynamicBullets: true,
 			clickable: true,
         renderBullet: function (index, className) {
           return '<span class="' + className + ' custom_slide" style="background-image:url('+img[index]+');background-size:cover;background-repeat:no-repeat;"></span>';
