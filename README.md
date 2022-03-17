@@ -1,2 +1,2 @@
 # custom_js_slider
-These are build by using swiper js it supports dynamic bullets  
+the slider build by using swiper js it supports dynamic bullets  
